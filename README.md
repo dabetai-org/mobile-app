@@ -1,126 +1,133 @@
-# dabetai - Aplicación móvil
-
-Aplicación para pacientes diabéticos que permite monitorear su condición y predecir complicaciones usando inteligencia artificial.
+# dabetai — Mobile App (Patient Hub)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React%20Native-0.79-blue?logo=react" alt="React Native version">
-  <img src="https://img.shields.io/badge/Expo-53.x-black?logo=expo" alt="Expo version">
-  <img src="https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript" alt="TypeScript version">
+  <img src="https://img.shields.io/badge/React_Native-0.79-61DAFB?logo=react&logoColor=black" alt="React Native">
+  <img src="https://img.shields.io/badge/Expo-53-000020?logo=expo&logoColor=white" alt="Expo">
+  <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
 </p>
-
-## 📱 Capturas de pantalla
 
 <p align="center">
-  <img src="./assets/screenshots/login.png" alt="Pantalla de login" width="200"/>
-  <img src="./assets/screenshots/dashboard.png" alt="Dashboard principal" width="200"/>
-  <img src="./assets/screenshots/predictions.png" alt="Predicciones IA" width="200"/>
-  <img src="./assets/screenshots/chat.png" alt="Chat inteligente" width="200"/>
+  <em>Patient mobile application for diabetes monitoring, wearable sync, and AI-powered complication risk prediction.</em>
 </p>
 
-## 🩺 ¿Qué es dabetai?
+<p align="center">
+  <a href="https://github.com/dabetai-org/mobile-app">Repository</a>
+  ·
+  <a href="https://github.com/dabetai-org/mobile-app/issues">Report Bug</a>
+  ·
+  <a href="https://chrisssp.vercel.app/assets/docs/papers/Prevenci%C3%B3n-de-Riesgos-de-la-Diabetes-Mediante-una-Plataforma-Inteligente-de-Monitorizaci%C3%B3n-y-Predicci%C3%B3n-de-Complicaciones-con-Inteligencia-Artificial.pdf">Research Paper</a>
+</p>
 
-**dabetai** es una plataforma integral para el monitoreo de diabetes que incluye:
-
-- **App móvil** (esta): para pacientes, monitoreo y predicciones
-- **App web**: para médicos, seguimiento de pacientes
-- **Modelo de IA**: predicción de complicaciones diabéticas
-
-La app móvil permite registrar datos de salud y recibir predicciones sobre **retinopatía, nefropatía, neuropatía y pie diabético**, ayudando a prevenir complicaciones graves.
-
----
-
-## ✨ Funcionalidades
-
-🤖 **Predicciones de IA** - alertas tempranas de complicaciones diabéticas  
-📊 **Monitoreo glucosa** - registro y visualización de niveles  
-💬 **Chat inteligente** - asistente IA para consultas sobre diabetes  
-📱 **Registro fácil** - comidas, medicación y actividad física  
-👨‍⚕️ **Conexión médico** - compartir datos con tu doctor  
-🔒 **Datos seguros** - autenticación y encriptación completa
+<p align="center">
+  <a href="README.md">🇬🇧 English</a> · <a href="README.es.md">🇪🇸 Español</a>
+</p>
 
 ---
 
-## 🛠 Tecnologías
+## About dabetai
 
-- **React Native** con Expo
-- **TypeScript** para mayor robustez
-- **Expo Router** para navegación
-- **NativeWind** (Tailwind CSS) para estilos
-- **Axios** para comunicación con API
-- **React Query** para gestión de estado
+**dabetai** is a comprehensive preventive ecosystem for diabetes that predicts complications like retinopathy, nephropathy, neuropathy, and diabetic foot before they become irreversible.
 
----
+This repository contains the **Mobile App** — a cross-platform application (Android/iOS) that acts as the central hub for patients to:
 
-## ⚡ Instalación rápida
+- Log glucose levels, food intake, medication, and physical activity
+- Sync with wearables (CGMs) to extract biomarkers like heart rate and sleep quality
+- View AI-powered risk predictions for diabetes complications
+- Communicate with healthcare providers
+- Receive early warnings for timely intervention
 
-### Prerrequisitos
+### Ecosystem
 
-- **Node.js** (v18 o superior)
-- **Expo CLI**: `npm install -g expo-cli`
+| Component | Repository | Stack |
+|-----------|-----------|-------|
+| **Mobile App** (this) | [dabetai-org/mobile-app](https://github.com/dabetai-org/mobile-app) | React Native 0.79, Expo 53, Tailwind CSS |
+| **Web Portal** | [dabetai-org/web-app](https://github.com/dabetai-org/web-app) | Angular 19, Tailwind CSS |
+| **Core API** | [dabetai-org/api](https://github.com/dabetai-org/api) | NestJS 11, PostgreSQL, Prisma |
+| **AI Inference API** | [dabetai-org/ai-api](https://github.com/dabetai-org/ai-api) | FastAPI, Python 3.11, MongoDB |
+| **AI Models** | [dabetai-org/ai-models](https://github.com/dabetai-org/ai-models) | Python, scikit-learn, XGBoost, PyTorch |
+| **Landing** | [dabetai-org/landing](https://github.com/dabetai-org/landing) | Astro, Tailwind CSS |
 
-### Pasos
+## Features
 
-1. **Clonar repositorio**
+- **AI Predictions** — Early risk alerts for diabetic complications
+- **Glucose Monitoring** — Log and visualize glucose levels
+- **Wearable Sync** — Connect CGMs for real-time biomarkers
+- **Smart Chat** — AI assistant for diabetes inquiries
+- **Health Logging** — Food, medication, and physical activity tracking
+- **Doctor Connection** — Share data with healthcare providers
+- **Secure Data** — JWT authentication and encryption
+
+## Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- Expo CLI: `npm install -g expo-cli`
+
+### Setup
 
 ```bash
-git clone https://github.com/Fermin-Cardenas/dabetai-mobileapp.git
-cd dabetai-mobileapp
-```
-
-2. **Instalar dependencias**
-
-```bash
+git clone https://github.com/dabetai-org/mobile-app.git
+cd mobile-app
 npm install
 ```
 
-3. **Configurar conexión al backend**
-   Crea `.env` en la raíz:
+Create a `.env` file:
 
-```
-API_BASE_URL="http://TU_IP:PUERTO"
+```env
+API_BASE_URL="http://YOUR_IP:PORT"
 ```
 
-4. **Ejecutar aplicación**
+Run the development server:
 
 ```bash
 npm start
 ```
 
-Escanea el código QR con Expo Go o usa un emulador.
+Scan the QR code with Expo Go or use an emulator.
 
----
+## Architecture
 
-## 🏗 Ecosistema dabetai: nuestros repositorios
+```
+┌───────────────────────────────────────────────┐
+│           Mobile App (React Native)            │
+│  ┌─────────┐ ┌──────────┐ ┌──────────────┐   │
+│  │ Health  │ │   AI     │ │  Wearable    │   │
+│  │ Logger  │ │ Insights │ │    Sync      │   │
+│  └────┬────┘ └────┬─────┘ └──────┬───────┘   │
+│       │           │              │            │
+│  ┌────▼───────────▼──────────────▼───────┐    │
+│  │         HTTP Services (Axios)         │    │
+│  └────────────────┬──────────────────────┘    │
+└───────────────────┼──────────────────────────┘
+                    │ JWT Auth
+         ┌──────────┴──────────┐
+         ▼                     ▼
+┌──────────────┐     ┌──────────────┐
+│  Core API    │     │  AI API      │
+│  (NestJS)    │     │  (FastAPI)   │
+└──────────────┘     └──────────────┘
+```
 
-dabetai está compuesto por múltiples repositorios especializados:
+## Contributing
 
-| Repositorio                                                             | Propósito                   | Estado          |
-| ----------------------------------------------------------------------- | --------------------------- | --------------- |
-| **[dabetai-mobileapp](https://github.com/Fermin-Cardenas/dabetai-mobileapp)** | App para pacientes          | ✅ En desarrollo |
-| **[dabetai-webapp](https://github.com/chrisdev-ts/dabetai-webapp)**     | App web para médicos        | ✅ En desarrollo |
-| **[dabetai-aiapi](https://github.com/aleor25/dabetai-aiapi)**           | API de IA y predicciones    | ✅ En desarrollo |
-| **[dabetai-aimodels](https://github.com/chrisdev-ts/dabetai-aimodels)** | Modelos de machine learning | ✅ En desarrollo |
-| **[dabetai-landing](https://github.com/chrisdev-ts/dabetai-landing)**   | Página de aterrizaje        | ✅ En desarrollo |
-| **[dabetai-api](https://github.com/chrisdev-ts/dabetai-api)**                                                         | API principal del backend   | ✅ En desarrollo |
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for branch naming, commit conventions, and PR workflow.
 
----
+## License
 
-## 🤝 Colaboración interna
+This project is licensed under the GNU General Public License v3.0 — see the [LICENSE](LICENSE) file for details.
 
-Seguimos convenciones específicas para mantener consistencia - consulta [CONTRIBUTING.MD](CONTRIBUTING.MD).
+## Acknowledgments
 
-## 🤝 Reconocimientos
+**Authors:**
+- Cardenas Cabal Fermín
+- Ortiz Pérez Alejandro — alex03ortizperez@gmail.com
+- Serrano Puertos Jorge Christian — christian.serrano.puertos@gmail.com
 
-Este proyecto fue desarrollado por el equipo de autores:
+**Advisors:**
+- Guarneros Nolasco Luis Rolando
+- Cruz Ramos Nancy Aracely
 
-- Cardenas Cabal Fermín  
-- Ortiz Pérez Alejandro  
-- Serrano Puertos Jorge Christian  
-
-Con la asesoría y guía conceptual de:
-
-- Guarneros Nolasco Luis Rolando  
-- Cruz Ramos Nancy Aracely  
-
-Y con el apoyo académico de la  
+**Academic Support:**
 - Universidad Tecnológica del Centro de Veracruz
